@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مؤسسة الأساليب المنوعة</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Cairo:wght@200..1000&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Cairo;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+      flex-wrap: wrap;
+    }
+
+    .right {
+      flex: 1;
+      background-color: #f1eded;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px 6px rgba(138, 43, 226, 0.7);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .right:hover {
+      box-shadow: 0 0 30px 12px rgba(255, 20, 147, 0.9);
+    }
+
+    .right img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .right h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      color: #4c1ef3;
+    }
+
+    .right .since {
+      font-size: 40px;
+      margin-bottom: 60px;
+      color: #4c1ef3;
+    }
+
+    .right .slogan {
+      font-size: 35px;
+      margin-bottom: 25px;
+      color: #4c1ef3;
+    }
+
+    .right a.button {
+      background-color: #ffffffcc;
+      color: #000;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      font-size: 16px;
+    }
+
+    .right a.button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .left {
+      flex: 1;
+      background-color: #4c1ef3; /* ✅ اللون المعدل */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .menu-item {
+      font-size: 20px;
+      padding: 15px 30px;
+      background-color: #333;
+      color: #fff;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      border-radius: 22px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 80%;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      background-color: #fff;
+      color: #000;
+      transform: scale(1.03);
+    }
+
+    .footer {
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .right {
+        order: 0;
+      }
+
+      .left {
+        order: 1;
+        background-color: #4c1ef3; /* نفس اللون على الجوال */
+      }
+
+      .left,
+      .right {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+      }
+
+      .menu-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <a class="menu-item" href="services.html">خدماتنا</a>
+      <a class="menu-item" href="about us.html">من نحن</a>
+      <a class="menu-item" href="Our partners in success.html">شركاؤنا في النجاح</a>
+      <a class="menu-item" href="Vision.html">الرؤية</a>
+      <a class="menu-item" href="call us.html">اتصل بنا</a>
+    </div>
+
+    <div class="right">
+      <img src="afatar.png" alt="شعار الشركة" />
+      <h1>الأساليب المنوعة للدعاية والإعلان</h1>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <div class="since">منذ 2002</div>
+      <div class="slogan">
+        من الطباعة الميدانية إلى التسويق الرقمي، خبرتنا ما وقفت.
+        نطوّر أدواتنا،
+        <p> نحافظ على قيمنا، ونشتغل مع كل عميل كأنه شريك نجاح</p>     
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    جميع الحقوق محفوظة لمؤسسة الأساليب المنوعة للدعاية والإعلان &copy; 2025
+  </div>
+</body>
+</html>

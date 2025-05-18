@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>خدماتنا - مؤسسة الأساليب المنوعة</title>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Cairo:wght@200..1000&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Cairo;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #1e3c72, #8e2de2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    /* شريط التنقل */
+    nav {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 15px 10px;
+      display: block;
+      font-size: 16px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #000;
+      border-radius: 6px;
+    }
+
+    /* زر القائمة للجوّال */
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: transparent;
+      border: none;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+      z-index: 200;
+    }
+
+    /* استايل القائمة المنثّقة (مخفية افتراضياً) */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 55px;
+        right: 0;
+        height: calc(100% - 55px);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      nav ul.active {
+        transform: translateX(0);
+      }
+
+      nav ul li {
+        margin: 20px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* المحتوى */
+    h1 {
+      margin: 30px 20px 20px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .intro {
+      color: #fff;
+      font-size: 30px;
+      margin: 0 20px 30px;
+      max-width: 800px;
+      z-index: 1;
+    }
+
+    .button {
+      display: block;
+      margin: 15px auto;
+      padding: 15px 25px;
+      font-size: 18px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      color: #fff;
+      font-size: 22px;
+      border: none;
+      border-radius: 22px;
+      text-decoration: none;
+      width: 80%;
+      max-width: 400px;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .button:hover {
+      filter: brightness(1.2);
+      transform: scale(1.05);
+    }
+
+    .small-button {
+      max-width: 200px;
+      font-size: 16px;
+      padding: 12px 20px;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
+    }
+
+    .small-button:hover {
+      filter: brightness(1.2);
+      color: #fff;
+      transform: scale(1.05);
+    }
+    .footer {
+      width: 100%;
+      background-color: #000000;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button class="menu-toggle" aria-label="قائمة التنقل">&#9776;</button>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="services.html">خدماتنا</a></li>
+      <li><a href="Our partners in success.html">شركاؤنا في النجاح</a></li>
+      <li><a href="about us.html">من نحن</a></li>
+      <li><a href="Vision.html">الرؤية</a></li>
+      <li><a href="call us.html">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+  <h1>خدماتنا</h1>
+  <p style="color: #8e2de2;">.</p>
+
+  <p class="intro">
+    
+    نقدم في مؤسستنا باقة متكاملة من الخدمات تجمع بين الخبرة الميدانية في الطباعة والإعلانات الخارجية، والاحترافية الرقمية في التسويق عبر منصات التواصل الاجتماعي، لتلبية جميع احتياجات عملائنا في مكان واحد.
+  </p>
+  <p style="color: #8e2de2;">.</p>
+  <p style="color: #8e2de2;">.</p>
+
+  <a href="print-and-field.html" class="button">خدمات الطباعة والإعلان الميداني</a>
+  <a href="Digital Marketing and Social Media.html" class="button">خدمات التسويق الرقمي والتواصل الاجتماعي</a>
+  <a href="call us.html" class="button small-button"> تواصل معنا  </a>
+  <p style="color: #8e2de2;">.</p>
+  <p style="color: #8e2de2;">.</p>
+  <p style="color: #8e2de2;">.</p>
+
+  <div class="footer">
+    جميع الحقوق محفوظة لمؤسسة الأساليب المنوعة للدعاية والإعلان &copy; 2025
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
